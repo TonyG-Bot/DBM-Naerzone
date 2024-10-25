@@ -9,6 +9,7 @@ mod:SetMinSyncRevision(20220623000000)
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 69195 71219 73031 73032",
+	"SPELL_CAST_SUCCESS 72295",
 	"SPELL_AURA_APPLIED 69279 69166 71912 72219 72551 72552 72553 69240 71218 73019 73020 69291 72101 72102 72103 72273",
 	"SPELL_AURA_APPLIED_DOSE 69166 71912 72219 72551 72552 72553 69291 72101 72102 72103",
 	"SPELL_AURA_REMOVED 69279",
@@ -28,17 +29,17 @@ local specWarnVileGas		= mod:NewSpecialWarningYou(69240, nil, nil, nil, 1, 2)
 local yellVileGas			= mod:NewYellMe(72273)
 local specWarnGastricBloat	= mod:NewSpecialWarningStack(72219, nil, 9, nil, nil, 1, 6)
 local specWarnInhaled3		= mod:NewSpecialWarningStack(69166, "Tank", 3, nil, nil, 1, 2)
-local specWarnGoo			= mod:NewSpecialWarningDodge(72297, true, nil, nil, 1, 2) -- Retail has default true for melee but it's more sensible to show for everyone.
+local specWarnGoo			= mod:NewSpecialWarningDodge(72295, true, nil, nil, 1, 2) -- Retail has default true for melee but it's more sensible to show for everyone.
 
 local timerGasSpore			= mod:NewBuffFadesTimer(12, 69279, nil, nil, nil, 3)
 local timerVileGas			= mod:NewBuffFadesTimer(6, 72273, nil, "Ranged", nil, 3)
 local timerGasSporeCD		= mod:NewNextTimer(40, 69279, nil, nil, nil, 3)		-- Every 40 seconds except after 3rd and 6th cast, then it's 50sec CD
-local timerVileGasCD		= mod:NewNextTimer(45, 72273, nil, nil, nil, 3)		-- Every 40 seconds except after 3rd and 6th cast, then it's 50sec CD
+local timerVileGasCD		= mod:NewNextTimer(40, 72273, nil, nil, nil, 3)		-- 
 local timerPungentBlight	= mod:NewNextTimer(34, 69195, nil, nil, nil, 2)		-- Edited. ~34 seconds after 3rd stack of inhaled
 local timerInhaledBlight	= mod:NewNextTimer(34.2, 69166, nil, nil, nil, 6)	-- variance? (25H Lordaeron 2022/09/04) - 34.2, 34.7, *, 34.2
 local timerGastricBloat		= mod:NewTargetTimer(100, 72219, nil, "Tank|Healer", nil, 5, nil, DBM_COMMON_L.TANK_ICON)	-- 100 Seconds until expired
 local timerGastricBloatCD	= mod:NewCDTimer(12, 72219, nil, "Tank|Healer", nil, 5, nil, DBM_COMMON_L.TANK_ICON)		-- 10 to 14 seconds
-local timerGooCD			= mod:NewCDTimer(10, 72297, nil, nil, nil, 3)
+local timerGooCD			= mod:NewNextTimer(10, 72295, nil, nil, nil, 3)
 
 local berserkTimer			= mod:NewBerserkTimer(300)
 
@@ -83,6 +84,7 @@ function mod:OnCombatStart(delay)
 	end
 	if self:IsHeroic() then
 		timerGooCD:Start(13-delay)
+		timerVileGasCD:Start(10-delay)
 	end
 end
 
@@ -99,6 +101,17 @@ function mod:SPELL_CAST_START(args)
 		timerInhaledBlight:Start(38)
 	end
 end
+
+function mod:SPELL_AURA_APPLIED(args)
+	local spellId = args.spellId
+	if spellId == 72550 then -- Malleable Goo
+		if self:IsDifficulty("heroic25") then
+			timerGooCD:Start()
+		else
+			timerGooCD:Start(15)--30 seconds in between goos on 10 man heroic
+		end
+	end	
+end	
 
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 69279 then	-- Gas Spore
@@ -163,12 +176,6 @@ function mod:SPELL_AURA_APPLIED(args)
 				SendChatMessage(L.AchievementFailed:format(args.destName, amount), "RAID_WARNING")
 			end
 		end
-	elseif args:IsSpellID(72550) then	-- Malleable Goo
-		if self:IsDifficulty("heroic25") then
-			timerGooCD:Start()
-		else
-			timerGooCD:Start(15)--30 seconds in between goos on 10 man heroic
-		end
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
@@ -178,6 +185,13 @@ function mod:SPELL_AURA_REMOVED(args)
 		if self.Options.SetIconOnGasSpore then
 			self:SetIcon(args.destName, 0)
 		end
+	end
+end
+
+function mod:SPELL_CAST_SUCCESS(args)
+	if args.spellId == 72273 and self:AntiSpam(3, 5) then
+		--warnVileGas:Show()
+		timerVileGasCD:Start()
 	end
 end
 

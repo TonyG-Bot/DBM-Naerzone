@@ -1,5 +1,7 @@
 ## Interface: 30300
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Karazhan|r
+## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Karazhan|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Karazhan|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0카라잔|r
 ## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0卡拉赞|r
 ## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0卡拉贊|r
@@ -15,9 +17,13 @@
 ## X-DBM-Mod-MapID: 800
 ## X-DBM-Mod-Sort: 1007
 ## X-DBM-Mod-Name: Karazhan
+## X-DBM-Mod-Name-esES: Karazhan
+## X-DBM-Mod-Name-esMX: Karazhan
 ## X-DBM-Mod-Name-zhCN: 卡拉赞
 ## X-DBM-Mod-Name-ruRU: Каражан
 ## X-DBM-Mod-LoadZone-zhCN: 卡拉赞
+## X-DBM-Mod-LoadZone-esES: Karazhan
+## X-DBM-Mod-LoadZone-esMX: Karazhan
 
 localization.en.lua
 localization.de.lua

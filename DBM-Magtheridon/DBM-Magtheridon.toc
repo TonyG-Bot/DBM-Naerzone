@@ -1,5 +1,7 @@
 ## Interface: 30300
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Magtheridon|r
+## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Guarida de Magtheridon|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Guarida de Magtheridon|r
 ## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0玛瑟里顿|r
 ## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Магтеридон|r
 ## LoadOnDemand: 1
@@ -12,6 +14,8 @@
 ## X-DBM-Mod-Has-Single-Format: 1
 ## X-DBM-StatTypes: normal
 ## X-DBM-Mod-Name: Magtheridon
+## X-DBM-Mod-Name-esES: Guarida de Magtheridon
+## X-DBM-Mod-Name-esMX: Guarida de Magtheridon
 ## X-DBM-Mod-Name-zhCN: 玛瑟里顿
 ## X-DBM-Mod-Name-ruRU: Магтеридон
 ## X-DBM-Mod-MapID: 780
@@ -19,6 +23,8 @@
 ## X-DBM-Mod-LoadZone: Magtheridon's Lair
 ## X-DBM-Mod-LoadZone-zhCN: 玛瑟里顿的巢穴
 ## X-DBM-Mod-LoadZone-ruRU: Логово Магтеридона
+## X-DBM-Mod-LoadZone-esES: Guarida de Magtheridon
+## X-DBM-Mod-LoadZone-esMX: Guarida de Magtheridon
 
 localization.en.lua
 localization.de.lua

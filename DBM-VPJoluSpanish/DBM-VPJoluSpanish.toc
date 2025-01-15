@@ -1,0 +1,18 @@
+﻿## Interface: 30300
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Voicepack JoluSpanish|r
+## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0西班牙语语音包|r
+## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0西班牙语语音包|r
+## DefaultState: enabled
+## RequiredDeps: DBM-Core
+## Author: Jolugon
+## Version: 10.0.2_r1
+## X-DBM-Voice: 1
+## X-DBM-Voice-Name: Spanish (Spain) by Jolugon
+## X-DBM-Voice-ShortName: JoluSpanish
+## X-DBM-Voice-Version: 14
+## X-DBM-Voice-HasCount: 1
+
+LibStub\LibStub.lua
+CallbackHandler-1.0\CallbackHandler-1.0.lua
+embeds.xml
+Soundpaths.lua 

@@ -29,6 +29,8 @@
 ## X-DBM-Mod-LoadZone: Vault of Archavon
 ## X-DBM-Mod-LoadZone-zhCN: 阿尔卡冯的宝库
 ## X-DBM-Mod-LoadZone-ruRU: Склеп Аркавона
+## X-DBM-Mod-LoadZone-esES: La Cámara de Archavon
+## X-DBM-Mod-LoadZone-esMX: La Cámara de Archavon
 
 localization.en.lua
 localization.de.lua

@@ -459,6 +459,12 @@ L.PlayTT					= "Enable TimerTracker"
 L.PlayTTCountdown			= "Play TimerTracker countdown sound"
 L.PlayTTCountdownFinished	= "Play TimerTracker countdown finished sound"
 
+L.Area_BossBanner					= "Boss Banner Options"
+L.EnableBB							= "Enable Boss Banner"
+L.PlayBBLoot						= "Play Boss Banner Loot animation"
+L.PlayBBSound						= "Play Boss Banner sound"
+L.OverrideBBFont					= "Override Boss Banner Blizzard default font properties"
+
 -- Panel: Blizzard Features
 L.Panel_HideBlizzard		= "Blizzard Features"
 L.Area_HideBlizzard			= "Blizzard Disable & Hide Options"

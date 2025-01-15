@@ -392,6 +392,12 @@ L.PlayTT					= "Habilitar TimerTracker"
 L.PlayTTCountdown			= "Reproducir sonidos de TimerTracker"
 L.PlayTTCountdownFinished	= "Reproducir sonidos de TimerTracker finalizado"
 
+L.Area_BossBanner					= "Opciones de Boss Banner"
+L.EnableBB							= "Habilitar Boss Banner"
+L.PlayBBLoot						= "Reproducir animacion de Boss Banner Loot"
+L.PlayBBSound						= "Reproducir sonido de Boss Banner"
+L.OverrideBBFont					= "Anular la fuente predeterminada de Boss Banner Blizzard"
+
 -- Panel: Blizzard Features
 L.Panel_HideBlizzard		= "Interfaz y funciones de Blizzard"
 L.Area_HideBlizzard			= "Opciones de interfaz y funciones de Blizzard"

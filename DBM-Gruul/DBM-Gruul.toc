@@ -1,5 +1,7 @@
 ## Interface: 30300
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Gruul|r
+## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Guarida de Gruul|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Guarida de Gruul|r
 ## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0格鲁尔的巢穴|r
 ## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Логово Груула|r
 ## LoadOnDemand: 1
@@ -12,6 +14,8 @@
 ## X-DBM-Mod-Has-Single-Format: 1
 ## X-DBM-StatTypes: normal
 ## X-DBM-Mod-Name: Gruul
+## X-DBM-Mod-Name-esES: Guarida de Gruul
+## X-DBM-Mod-Name-esMX: Guarida de Gruul
 ## X-DBM-Mod-Name-zhCN: 格鲁尔
 ## X-DBM-Mod-Name-ruRU: Груул
 ## X-DBM-Mod-MapID: 777
@@ -19,6 +23,8 @@
 ## X-DBM-Mod-LoadZone: Gruul's Lair
 ## X-DBM-Mod-LoadZone-zhCN: 格鲁尔的巢穴
 ## X-DBM-Mod-LoadZone-ruRU: Логово Груула
+## X-DBM-Mod-LoadZone-esES: Guarida de Gruul
+## X-DBM-Mod-LoadZone-esMX: Guarida de Gruul
 
 localization.en.lua
 localization.de.lua

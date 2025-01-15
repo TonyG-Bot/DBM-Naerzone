@@ -1,5 +1,7 @@
 ## Interface: 30300
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Zul'Aman|r
+## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Zul'Aman|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Zul'Aman|r
 ## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0祖阿曼|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0줄아만|r
 ## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Зул'Аман|r
@@ -12,9 +14,13 @@
 ## X-DBM-Mod-MapID: 782
 ## X-DBM-Mod-Sort: 1005
 ## X-DBM-Mod-Name: Zul'Aman
+## X-DBM-Mod-Name-esES: Zul'Aman
+## X-DBM-Mod-Name-esMX: Zul'Aman
 ## X-DBM-Mod-Name-zhCN: 祖阿曼
 ## X-DBM-Mod-Name-ruRU: Зул'Аман
 ## X-DBM-Mod-LoadZone-zhCN: 祖阿曼
+## X-DBM-Mod-LoadZone-esES: Zul'Aman
+## X-DBM-Mod-LoadZone-esMX: Zul'Aman
 
 localization.en.lua
 localization.cn.lua

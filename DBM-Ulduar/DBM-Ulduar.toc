@@ -4,6 +4,7 @@
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0울두아르|r
 ## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0奧杜亞|r
 ## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Ulduar|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Ulduar|r
 ## LoadOnDemand: 1
 ## RequiredDeps: DBM-Core
 ## SavedVariables: DBMUlduar_AllSavedVars
@@ -18,6 +19,7 @@
 ## X-DBM-Mod-Name-zhTW: 奧杜亞
 ## X-DBM-Mod-Name-zhCN: 奥杜尔
 ## X-DBM-Mod-Name-esES: Ulduar
+## X-DBM-Mod-Name-esMX: Ulduar
 ## X-DBM-Mod-Sort: 4
 ## X-DBM-Mod-MapID: 530
 ## X-DBM-Mod-LoadZone: Ulduar

@@ -30,6 +30,8 @@
 ## X-DBM-Mod-LoadZone: Onyxia's Lair
 ## X-DBM-Mod-LoadZone-zhCN: 奥妮克希亚的巢穴
 ## X-DBM-Mod-LoadZone-ruRU: Логово Ониксии
+## X-DBM-Mod-LoadZone-esES: Guarida de Onyxia
+## X-DBM-Mod-LoadZone-esMX: Guarida de Onyxia
 
 localization.en.lua
 localization.de.lua

@@ -451,3 +451,5 @@ L.RAID_INFO_WORLD_BOSS		= "Boss hors instance"
 L.SCENARIO_STAGE			= "Phase %d"
 -- EJ
 L.HARD_MODE					= "Mode difficile" -- 17220
+L.BOSS_YOU_DEFEATED			= "Vous avez vaincu" -- 25559
+L.BOSS_KILL_SUBTITLE		= "s’est fait terrasser" -- 25560

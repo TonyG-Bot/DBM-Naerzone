@@ -612,3 +612,5 @@ L.RAID_INFO_WORLD_BOSS				= "Босс вне подземелья"
 L.SCENARIO_STAGE					= "%d-й этап"
 -- EJ
 L.HARD_MODE							= "Сложный режим" -- 17220
+L.BOSS_YOU_DEFEATED					= "Вы победили" -- 25559
+L.BOSS_KILL_SUBTITLE				= "Босс побежден" -- 25560

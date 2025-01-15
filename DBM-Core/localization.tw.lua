@@ -611,3 +611,5 @@ L.RAID_INFO_WORLD_BOSS			= "世界首領"
 L.SCENARIO_STAGE				= "階段%d"
 -- EJ
 L.HARD_MODE						= "困難模式" -- 17220
+L.BOSS_YOU_DEFEATED				= "你擊敗了" -- 25559
+L.BOSS_KILL_SUBTITLE			= "被擊敗了" -- 25560

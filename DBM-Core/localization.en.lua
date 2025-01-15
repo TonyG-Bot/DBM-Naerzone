@@ -622,3 +622,5 @@ L.RAID_INFO_WORLD_BOSS					= "World Boss"
 L.SCENARIO_STAGE						= "Stage %d"
 -- EJ
 L.HARD_MODE								= "Hard Mode" -- 17220
+L.BOSS_YOU_DEFEATED						= "You Defeated" -- 25559
+L.BOSS_KILL_SUBTITLE					= "has been defeated" -- 25560

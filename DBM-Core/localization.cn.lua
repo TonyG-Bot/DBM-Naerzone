@@ -599,3 +599,5 @@ L.RAID_INFO_WORLD_BOSS		= "世界首领"
 L.SCENARIO_STAGE			= "阶段%d"
 -- EJ
 L.HARD_MODE					= "困难模式" -- 17220
+L.BOSS_YOU_DEFEATED			= "你击败了" -- 25559 is "你被击败了" but means "You are defeated". Corrected by Emi.
+L.BOSS_KILL_SUBTITLE		= "已被击败" -- 25560
